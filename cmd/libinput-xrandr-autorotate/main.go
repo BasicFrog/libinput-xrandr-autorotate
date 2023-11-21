@@ -15,7 +15,7 @@ import (
 )
 
 func main() {
-	var touchscreensStr = flag.String("touchscreens", "", "libinput touchscreen device names. Leave empty for autodetection")
+	var touchscreensStr = flag.String("touchscreens", "Wacom HID 48CE Pen", "Wacom HID 48CE Finger", "libinput touchscreen device names. Leave empty for autodetection")
 	var display = flag.String("display", ":0", "xrandr displays")
 	var accelerometerName = flag.String("accelerometer", "", "accelerometer to use. Leave empty for autodetection")
 	var threshold = flag.Float64("threshold", 7.0, "threshold for orientation edge detection")
